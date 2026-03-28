@@ -17,6 +17,9 @@ public class HouseData
     public float Price { get; set; }
 }
 
-public record HousePrediction(
-    float PredictedPrice
-);
+public class HousePrediction
+{
+    public float Score { get; set; }
+}
+
+

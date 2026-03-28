@@ -1,7 +1,14 @@
-﻿using ImmoPredict;
+﻿using ImmoPredict.Models;
 
-var engine = new Engine();
+var predictor = new Predictor();
 
-engine.Treatment();
+var input = new HouseData
+{
+    Surface = 75,
+    Rooms = 3,
+    LocationScore = 8
+};
 
-Console.WriteLine("Fin du programme");
+var price = predictor.Predict(input);
+
+Console.WriteLine($"Prix estimé : {price}");
