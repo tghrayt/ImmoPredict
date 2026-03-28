@@ -1,0 +1,7 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/ImmoPredict/obj
+/ImmoPredict/.vs/ImmoPredict.slnx
+/ImmoPredict/.vs/ImmoPredict/CopilotIndices/18.4.105.37992
