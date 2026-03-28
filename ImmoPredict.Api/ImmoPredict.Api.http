@@ -1,0 +1,6 @@
+@ImmoPredict.Api_HostAddress = http://localhost:5225
+
+GET {{ImmoPredict.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

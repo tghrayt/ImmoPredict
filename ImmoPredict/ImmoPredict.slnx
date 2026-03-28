@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../ImmoPredict.Api/ImmoPredict.Api.csproj" Id="231fb649-bd62-4ecb-b0a4-4ef9f8df464d" />
   <Project Path="ImmoPredict.csproj" />
 </Solution>
