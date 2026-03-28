@@ -46,5 +46,7 @@ public class Engine
 
         Console.WriteLine($"R² : {metrics.RSquared}");
         Console.WriteLine($"RMSE : {metrics.RootMeanSquaredError}");
+
+        _mlContext.Model.Save(model, data.Schema, "model.zip");
     }
 }
