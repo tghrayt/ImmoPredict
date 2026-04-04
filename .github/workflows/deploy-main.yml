@@ -54,7 +54,7 @@ jobs:
       - name: Deploy to VM
         run: |
           ssh "${{ secrets.VM_USER }}@${{ secrets.VM_HOST }}" << 'EOF'
-            cd /opt/immopredict
+            cd /opt/Immopredict
             docker compose pull
             docker compose up -d
             docker compose ps
