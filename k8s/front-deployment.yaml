@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: immopredict-client
+  labels:
+    app: immopredict-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: immopredict-client
+  template:
+    metadata:
+      labels:
+        app: immopredict-client
+    spec:
+      containers:
+        - name: immopredict-client
+          image: tghrayt/immopredict-front:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: immopredict-api
+  labels:
+    app: immopredict-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: immopredict-api
+  template:
+    metadata:
+      labels:
+        app: immopredict-api
+    spec:
+      containers:
+        - name: immopredict-api
+          image: tghrayt/immopredict-api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Production
+            - name: ASPNETCORE_URLS
+              value: http://+:8080
