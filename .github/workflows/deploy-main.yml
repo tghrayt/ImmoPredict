@@ -79,8 +79,8 @@ jobs:
           file: ./ImmoPredict.Client/Dockerfile
           push: true
           tags: |
-            tghrayt/immopredict-front:latest
-            tghrayt/immopredict-front:${{ github.sha }}
+            tghrayt/immopredict-client:latest
+            tghrayt/immopredict-client:${{ github.sha }}
 
   deploy:
     runs-on: ubuntu-latest
@@ -114,11 +114,11 @@ jobs:
             sudo kubectl set image deployment/immopredict-api \
               immopredict-api=tghrayt/immopredict-api:${{ github.sha }}
 
-            sudo kubectl set image deployment/immopredict-front \
-              immopredict-front=tghrayt/immopredict-front:${{ github.sha }}
+            sudo kubectl set image deployment/immopredict-client \
+              immopredict-client=tghrayt/immopredict-client:${{ github.sha }}
 
             sudo kubectl rollout status deployment/immopredict-api --timeout=180s
-            sudo kubectl rollout status deployment/immopredict-front --timeout=180s
+            sudo kubectl rollout status deployment/immopredict-client --timeout=180s
 
             echo "===== Pods ====="
             sudo kubectl get pods -o wide
