@@ -11,7 +11,7 @@ FROM nginx:alpine AS final
 WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
-COPY --from=build /app/dist/immopredict.Client/browser /usr/share/nginx/html
+COPY --from=build /app/dist/ImmoPredict.Client/browser /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
