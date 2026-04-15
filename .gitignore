@@ -13,3 +13,6 @@
 /ImmoPredict.Client/.vscode
 /ImmoPredict.Client/obj/Debug
 /.vs
+/ImmoPredict.Application/obj
+/ImmoPredict.Domain/obj
+/ImmoPredict.Infrastructure/obj

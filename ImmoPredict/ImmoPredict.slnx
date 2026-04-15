@@ -1,8 +1,11 @@
 <Solution>
   <Project Path="../ImmoPredict.Api/ImmoPredict.Api.csproj" Id="231fb649-bd62-4ecb-b0a4-4ef9f8df464d" />
+  <Project Path="../ImmoPredict.Application/ImmoPredict.Application.csproj" Id="ea9f1f8e-677d-4219-8e19-20bfb53876c6" />
   <Project Path="../ImmoPredict.Client/ImmoPredict.Client.esproj">
     <Build />
     <Deploy />
   </Project>
+  <Project Path="../ImmoPredict.Domain/ImmoPredict.Domain.csproj" Id="fb3d7c6c-9b64-4a52-9ee1-a6cba48845f9" />
+  <Project Path="../ImmoPredict.Infrastructure/ImmoPredict.Infrastructure.csproj" Id="e42dfb2b-ab20-4bc4-9288-4293da40d0cd" />
   <Project Path="ImmoPredict.csproj" />
 </Solution>
